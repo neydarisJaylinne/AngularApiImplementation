@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col-md-3" *ngFor="let card of cards">
+      <div class="card mb-4 ">
+        <div class="card-body">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="border: 2px solid #00C83C;
+                border-radius: 5px;
+                opacity: 1;
+                float: right;">
+          </div>
+          <h5 class="card-title">{{ card.nameProduct }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ card.numberProduct }}</h6>
+          <hr>
+          <p class="cardValue">${{ card.balanceProduct }}</p>
+          <div class="cardRectangle">
+            <p class="card-text">{{ card.detaildProduct }}</p>
+          </div>      
+        </div>
+      </div>
+    </div>  
+    <div class="col-md-3">
+      <div class="card text-center mb-4">
+        <div class="card bg-dark text-white">
+          <img class="card-img" src="assets/imagenes/gente.png" alt="Card image" style="opacity: 0.5;">
+          <div class="card-img-overlay" style="margin-top: 100px;">
+            <button type="button" class="btn btnExplore" style="float: left;" (click)="explorar()">EXPLORA
+              AHORA</button>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </div>
+</div>
+<app-asociate-button></app-asociate-button>
+<!-- explore -->
+<div *ngIf="exploreWindow == true">
+<app-explore></app-explore>
+</div>
+

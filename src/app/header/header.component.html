@@ -1,0 +1,43 @@
+<nav class="navbar shadow p-3 mb-5 bg-body-tertiary rounded" style="position: fixed; z-index: 10;">
+    <div class="container-fluid">
+        <div class="col col-sm-1">
+            <button class="navbar-toggler" type="button" (click)="viewBar()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="col">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imagenes/Skandia.png" alt="Logo" class="d-inline-block align-text-top">
+                <span class="skTitle">| Plan Financiero Digital - FPX</span>
+            </a>
+        </div>
+        <div class="col" style="float: right ;">
+            <div class="row row-cols-3">
+                <div class="col-sm-5">
+                    <div class="icon">
+                        <img src="assets/iconos/Happy.png" alt="Image H">
+                        <span class="item">Tu Financial Planner</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-3" >
+                    <img src="assets/iconos/hand3.png" alt="Image S">
+                    <span class="item">Aportes</span>
+                </div>
+                <div class="col-sm-1" >
+                    <div class="icon">
+                        <img class="questionViewPage" src="assets/iconos/pregunta.png" alt="Image H">
+                    </div>                    
+                </div>
+                <div class="col-sm-1">
+                    <span class="item"  >Preguntas Frecuentes</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+<div *ngIf="sideView == true">
+    <app-side-bar></app-side-bar>
+</div>
+

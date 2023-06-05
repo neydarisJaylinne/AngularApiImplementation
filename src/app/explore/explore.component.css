@@ -1,0 +1,79 @@
+.card-img, .card-img-bottom {
+    height: 443px;
+}
+.textExplore{
+    text-align: left;
+font: normal normal bold 25px/30px Montserrat;
+letter-spacing: 0px;
+color: #3F3F3F;
+}
+.orangeExploreText{
+    text-align: left;
+font: normal normal bold 25px/30px Montserrat;
+letter-spacing: 0px;
+color: #FE9200;
+}
+.card-body{
+    padding: unset;
+    margin: 5px;
+}
+p{
+    text-align: left;
+font: normal normal normal 12px/23px Verdana;
+letter-spacing: 0px;
+color: #3F3F3F;
+margin: 5px;
+}
+.card-link{
+    text-align: center;
+text-decoration: underline;
+font: normal normal 600 16px/17px Montserrat;
+letter-spacing: 0px;
+color: #00C83C;
+opacity: 1;
+padding: 2px;
+margin: 5px;
+}
+.card-title{
+    text-align: left;
+font: normal normal normal 18px/23px Montserrat;
+letter-spacing: 0px;
+color: #3F3F3F;
+margin: 5px;
+}
+.goIcon{
+    margin-left: 42rem;
+    margin-top: -20rem;
+}
+.text-bg-info{
+    position: absolute;
+    margin: 5px;
+    background-color: #FE9200 !important;
+    color: white !important;
+}
+.text-bg-secondary{
+    position: absolute;
+    margin: 5px;
+    background-color: #C0F3FF !important;
+    color: black !important;
+}
+.cardIcon{
+    margin: 5px;
+}
+@media screen and (max-width: 870px ) {
+    .orangeExploreText{
+        font-size: small;
+    }
+    .textExplore{
+        font-size: small;
+    }
+    .card-title{
+        font-size: small;
+    }
+    .col-sm-6{
+        display: contents;
+    }
+    .space{
+        display: none;
+    }
+}
